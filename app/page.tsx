@@ -1,7 +1,7 @@
 import { getAllTodos } from "@/api"
 import AddTask from "./components/AddTask"
 import Login from "./components/Login"
-import Register from "./components/Register"
+import Register from "./register/Register"
 import TodoList from "./components/TodoList"
 
 export default async function Home() {
@@ -12,8 +12,8 @@ export default async function Home() {
       <div className='text-center my-5 flex flex-col gap-4'>
         <h1 className='text-2xl font-bold'>Todo List Kauri</h1>
         {/* <AddTask /> */}
-        <Login />
-        {/* <Register/> */}
+        {/* <Login /> */}
+        <Register/>
       </div>
       {/* <TodoList tasks={tasks}/> */}
     </main>
